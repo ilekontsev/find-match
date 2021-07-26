@@ -1,0 +1,26 @@
+
+.root-wrap-app{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: url("/src/components/App/background.png") 0 0/100% 100% no-repeat;
+}
+.wrap-app{
+  width: 96%;
+}
+.header-app{
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  background: #b6b6b6;
+  box-shadow: 0 0 5px black;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.user-header-app{
+  margin: 5px;
+  padding: 5px;
+  font-size: 24px;
+}
