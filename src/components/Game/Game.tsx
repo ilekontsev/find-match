@@ -131,12 +131,8 @@ function Game(props: any) {
             onClick={() => handleClickCard(item, index)}
             className={item.isActive ? "game-card flip" : "game-card"}
           >
-            <div className="wrap-front-card">
-              <img src={item.card} alt="" className="front-card" />
-            </div>
-            <div className="wrap-front-back">
-              <img src="/assets/backimg.png" alt="" className="back-card" />
-            </div>
+            <img src={item.card} alt="" className="front-card" />
+            <img src="/assets/backimg.png" alt="" className="back-card" />)
           </div>
         ))}
       </div>

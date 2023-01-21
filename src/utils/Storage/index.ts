@@ -9,7 +9,7 @@ class Storage {
     try {
       const stringified = JSON.stringify(value);
       localStorage.setItem(key, stringified);
-    } catch (e) {
+    } catch (e: any) {
       Logger.error(e);
     }
   }
@@ -18,7 +18,7 @@ class Storage {
     try {
       const value = localStorage.getItem(key);
       return JSON.parse(value as string);
-    } catch (e) {
+    } catch (e: any) {
       Logger.error(e);
     }
   }

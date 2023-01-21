@@ -1,65 +1,83 @@
-.root-wrap-game{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.root-wrap-game {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.wrap-game{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    perspective: 1000px;
-    height: calc(100vh - 170px);
-    width: 100%;
-    padding: 20px;
+.wrap-game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  perspective: 1000px;
+  height: calc(100vh - 170px);
+  width: 100%;
+  padding: 20px;
 }
-.block-score-user{
-    font-size: 32px;
-    font-weight: bold;
-    color: #000000;
+.block-score-user {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
 }
 
-.game-card{
-    margin: 5px;
-    box-shadow: 0 0 5px black;
-    width: 20%;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-
+.game-card {
+  margin: 5px;
+  box-shadow: 0 0 5px black;
+  width: 20%;
+  position: relative;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
 }
-.game-card:active{
-    transform: scale(0.95);
-    transition: transform .1s;
+.game-card:active {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transition: transform 0.1s;
+  -webkit-transition: transform 0.1s;
+  -moz-transition: transform 0.1s;
+  -o-transition: transform 0.1s;
 }
 .game-card.flip {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
 }
-.wrap-score-game{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
+.wrap-score-game {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
 }
 
-.back-card{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    pointer-events: none;
-    object-fit: cover;
-    padding: 2px;
+.back-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  pointer-events: none;
+  object-fit: cover;
+  padding: 2px;
 }
-.front-card{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding: 2px;
-    object-fit: contain;
-    background: white;
-    pointer-events: none;
+.front-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  object-fit: contain;
+  background: white;
+  pointer-events: none;
 }
